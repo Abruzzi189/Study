@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:background="@color/colorPrimaryDark">
+
+    <RelativeLayout
+        android:id="@+id/rl_up"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <ImageView
+            android:id="@+id/iv_smallImage"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_song_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:layout_toRightOf="@id/iv_smallImage"
+            android:text="Cô gái M52"
+            android:textColor="#fff"/>
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@id/rl_up"
+        >
+        <ImageView
+            android:id="@+id/iv_looping"
+            android:layout_marginRight="16dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_loop_black_24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/iv_back_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="16dp"
+            android:layout_toStartOf="@+id/iv_playPause"
+            android:src="@drawable/ic_fast_rewind_black_24dp"/>
+
+        <ImageView
+            android:id="@+id/iv_playPause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_pause_black_24dp"/>
+
+        <ImageView
+            android:id="@+id/iv_next_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="15dp"
+            android:layout_toEndOf="@+id/iv_playPause"
+            android:src="@drawable/ic_fast_forward_black_24dp"/>
+
+        <TextView
+            android:id="@+id/tv_current"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="8dp"
+            android:text="00:00"
+            android:textColor="#fff"/>
+
+        <ProgressBar
+            android:id="@+id/pb_time"
+            style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_toLeftOf="@id/tv_duration"
+            android:layout_toRightOf="@+id/tv_current"/>
+
+        <TextView
+            android:id="@+id/tv_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="4dp"
+            android:layout_marginRight="8dp"
+            android:text="00:00"
+            android:textColor="#fff"/>
+    </RelativeLayout>
+</RelativeLayout>

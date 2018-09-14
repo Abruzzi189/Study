@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/rv_above"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.example.thangpq.cutomlayoutdemo.CircleImageView
+            android:id="@+id/iv_avatar"
+            android:layout_width="76dp"
+            android:layout_height="76dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/dummy_circle_avatar" />
+
+        <TextView
+            android:id="@+id/tv_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/iv_avatar"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="Thang Pham" />
+
+        <TextView
+            android:id="@+id/tv_point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_username"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/iv_avatar"
+            android:drawableLeft="@drawable/point_white"
+            android:paddingTop="7dp"
+            android:text="100point" />
+
+        <Button
+            style="@style/button_base"
+
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_username"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/tv_point"
+            android:text="Point" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rv_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/rl_status"
+            layout="@layout/item_camera" />
+
+        <LinearLayout
+            android:id="@+id/ll_row1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rl_status"
+            android:weightSum="3">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tv_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/ic_mypage_action_schedule"
+                    android:gravity="center"
+                    android:padding="16dp"
+                    android:text="Number 1" />
+
+
+            </RelativeLayout>
+            <View style="@style/border_hor"/>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/ic_mypage_action_schedule"
+                    android:gravity="center"
+                    android:padding="16dp"
+                    android:text="Number 1" />
+            </RelativeLayout>
+            <View style="@style/border_hor"/>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/ic_mypage_action_schedule"
+                    android:gravity="center"
+                    android:padding="16dp"
+                    android:text="Number 1" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_row2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_row1"
+            android:weightSum="3">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/ic_mypage_action_schedule"
+                android:gravity="center"
+                android:padding="16dp"
+                android:text="Number 1" />
+            <View style="@style/border_hor"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/ic_mypage_action_schedule"
+                android:gravity="center"
+                android:padding="16dp"
+                android:text="Number 1" />
+            <View style="@style/border_hor"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/ic_mypage_action_schedule"
+                android:gravity="center"
+                android:padding="16dp"
+                android:text="Number 1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_row3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_row2"
+            android:weightSum="3">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/ic_mypage_action_schedule"
+                android:gravity="center"
+                android:padding="16dp"
+                android:text="Number 1" />
+            <View style="@style/border_hor"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/ic_mypage_action_schedule"
+                android:gravity="center"
+                android:padding="16dp"
+                android:text="Number 1" />
+            <View style="@style/border_hor"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/ic_mypage_action_schedule"
+                android:gravity="center"
+                android:padding="16dp"
+                android:text="Number 1" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

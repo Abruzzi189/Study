@@ -1,0 +1,15 @@
+<resources>
+  <string name="app_name">TestFireBaseNhap</string>
+  <string name="title_textview_my_profile_edit">プロフィールの編集</string>
+  <string name="pull_to_load_more_release_label">リリースしてもっと表示してください&#8230;</string>
+  <string name="pull_to_refresh_from_bottom_pull_label">@string/pull_to_refresh_pull_label</string>
+  <string name="pull_to_refresh_from_bottom_release_label">@string/pull_to_refresh_release_label</string>
+  <string name="pull_to_refresh_from_bottom_refreshing_label">@string/pull_to_refresh_refreshing_label</string>
+  <string name="pull_to_refresh_manual_refreshing_label">@string/pull_to_refresh_refreshing_label</string>
+  <string name="pull_to_refresh_pull_label">引いて更新してください</string>
+  <string name="pull_to_refresh_release_label">リリースして更新してください</string>
+  <string name="pull_to_refresh_refreshing_label">読み込み中…</string>
+  <string name="pull_to_load_more_pull_label">引いてもっと表示してください&#8230;</string>
+  <string name="pull_dateformat">HH:mm yyyy/MM/dd</string>
+  <string name="pull_to_refresh_time_update">更新： %1$s</string>
+</resources>

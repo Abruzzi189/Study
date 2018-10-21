@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "706765213320",
+    "firebase_url": "https://thangothello.firebaseio.com",
+    "project_id": "thangothello",
+    "storage_bucket": "thangothello.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:706765213320:android:f138eca6646558f3",
+        "android_client_info": {
+          "package_name": "com.example.thangpham.othellothang"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "706765213320-o72jjsgbmmhbdg8l29u0qmpth803ls4p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.thangpham.othellothang",
+            "certificate_hash": "854e9523b799786a763d5da6115cfa7064391673"
+          }
+        },
+        {
+          "client_id": "706765213320-l7omhmsd34rnfi86v8jljvp3jjc5ueja.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBA_xS3-KssB0gofqM-DfQmm12nuqzW8d8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "706765213320-l7omhmsd34rnfi86v8jljvp3jjc5ueja.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
